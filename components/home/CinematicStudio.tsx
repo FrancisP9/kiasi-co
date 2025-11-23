@@ -37,7 +37,7 @@ export function CinematicStudio() {
           </div>
           <div className="flex items-end">
             <p className="text-lg text-white/60 leading-relaxed max-w-md">
-              Kiasi signifie "juste mesure". Nous croyons en un design qui ne crie pas, mais qui parle juste. Une alliance entre esthétique afro-moderne et performance technique.
+              Kiasi signifie "juste mesure, valeur" en Swahili. Nous croyons en un design qui ne crie pas, mais qui parle juste. Notre mission : valoriser les entreprises africaines et afro-descendantes par une alliance entre esthétique afro-moderne et performance technique.
             </p>
           </div>
         </div>

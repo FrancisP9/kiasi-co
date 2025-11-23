@@ -30,9 +30,16 @@ export function CinematicHero() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-          className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-[#C2A878] mb-8"
+          className="text-6xl md:text-8xl lg:text-9xl font-[family-name:var(--font-playfair)] font-bold tracking-tight mb-8"
         >
-          KIASI & CO
+          <span className="inline-block text-transparent bg-clip-text bg-gradient-to-br from-[#E8773D] via-[#2D5F3F] via-[#4A90A4] to-[#C2A878]">K</span>
+          <span className="inline-block text-transparent bg-clip-text bg-gradient-to-br from-[#2D5F3F] via-[#D4622C] via-[#E8773D] to-[#4A90A4]">I</span>
+          <span className="inline-block text-transparent bg-clip-text bg-gradient-to-br from-[#D4622C] via-[#4A90A4] via-[#C2A878] to-[#E8773D]">A</span>
+          <span className="inline-block text-transparent bg-clip-text bg-gradient-to-br from-[#4A90A4] via-[#E8773D] via-[#2D5F3F] to-[#D4622C]">S</span>
+          <span className="inline-block text-transparent bg-clip-text bg-gradient-to-br from-[#C2A878] via-[#2D5F3F] via-[#D4622C] to-[#4A90A4]">I</span>
+          <span className="text-white"> & </span>
+          <span className="inline-block text-transparent bg-clip-text bg-gradient-to-br from-[#E8773D] via-[#4A90A4] via-[#C2A878] to-[#2D5F3F]">C</span>
+          <span className="inline-block text-transparent bg-clip-text bg-gradient-to-br from-[#2D5F3F] via-[#E8773D] via-[#4A90A4] to-[#C2A878]">O</span>
         </motion.h1>
 
         <motion.p
@@ -41,7 +48,7 @@ export function CinematicHero() {
           transition={{ duration: 1, delay: 0.8 }}
           className="text-lg md:text-xl text-white/50 max-w-xl mx-auto font-light leading-relaxed"
         >
-          Nous révélons la valeur des marques ambitieuses par une esthétique cinématographique et une stratégie digitale précise.
+          Nous accompagnons les entreprises africaines de la diaspora et en Afrique dans leur transformation digitale et leur rayonnement visuel.
         </motion.p>
       </div>
     </section>
