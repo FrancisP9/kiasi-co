@@ -6,7 +6,7 @@ import { CinematicContact } from "@/components/home/CinematicContact";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black">
+    <main className="min-h-screen bg-background text-foreground">
       <CinematicHero />
       <CinematicServices />
       <CinematicProjects />

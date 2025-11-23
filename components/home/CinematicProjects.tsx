@@ -35,16 +35,16 @@ export function CinematicProjects() {
   const titleY = useTransform(scrollYProgress, [0, 1], [0, -50]);
 
   return (
-    <section ref={containerRef} className="bg-black text-white py-32 px-6 relative z-10">
+    <section ref={containerRef} className="bg-background text-foreground py-32 px-6 relative z-10">
       <div className="container mx-auto max-w-6xl">
         <motion.div 
           style={{ y: titleY }}
           className="flex items-end justify-between mb-24"
         >
-          <h2 className="text-xs font-light tracking-[0.3em] uppercase text-white/40">
+          <h2 className="text-xs font-light tracking-[0.3em] uppercase text-foreground/40">
             Sélection de travaux
           </h2>
-          <span className="text-xs font-mono text-white/40">01 — 03</span>
+          <span className="text-xs font-mono text-foreground/40">01 — 03</span>
         </motion.div>
 
         <div className="space-y-32">
@@ -70,18 +70,18 @@ export function CinematicProjects() {
                   style={{ scale, x }}
                   whileHover={{ scale: 1.02 }}
                   transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                  className="relative aspect-[16/9] overflow-hidden mb-8 bg-white/5"
+                  className="relative aspect-[16/9] overflow-hidden mb-8 bg-foreground/5"
                 >
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60 z-10" />
                   
-                  <div className="absolute inset-0 flex items-center justify-center text-white/10 text-4xl font-serif italic">
+                  <div className="absolute inset-0 flex items-center justify-center text-foreground/10 text-4xl font-serif italic">
                     {project.title} Image
                   </div>
                   
-                  <div className="absolute inset-0 border border-white/10 group-hover:border-white/30 transition-colors duration-500 z-20" />
+                  <div className="absolute inset-0 border border-foreground/10 group-hover:border-foreground/30 transition-colors duration-500 z-20" />
                 </motion.div>
 
-                <div className="flex justify-between items-baseline border-t border-white/10 pt-6 group-hover:border-white/30 transition-colors duration-500">
+                <div className="flex justify-between items-baseline border-t border-foreground/10 pt-6 group-hover:border-foreground/30 transition-colors duration-500">
                   <div>
                     <motion.h3 
                       whileHover={{ x: 10 }}
@@ -89,11 +89,11 @@ export function CinematicProjects() {
                     >
                       {project.title}
                     </motion.h3>
-                    <p className="text-white/40 font-mono text-sm">
+                    <p className="text-foreground/40 font-mono text-sm">
                       {project.category}
                     </p>
                   </div>
-                  <span className="text-white/40 font-mono text-sm">{project.year}</span>
+                  <span className="text-foreground/40 font-mono text-sm">{project.year}</span>
                 </div>
               </motion.div>
             );
