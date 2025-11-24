@@ -6,7 +6,8 @@ import FuzzyText from "../ui/FuzzyText";
 import DecryptedText from "../ui/DecryptedText";
 
 export function CinematicHero() {
-  // État pour synchroniser les animations
+  // Plus de condition d'entrée : le site s'affiche direct
+  // On garde juste l'état interne pour synchroniser Fuzzy et Decrypted
   const [isTextRevealed, setIsTextRevealed] = useState(false);
 
   return (
@@ -55,6 +56,7 @@ export function CinematicHero() {
         }}
       />
 
+      {/* CONTENU PRINCIPAL - Toujours affiché */}
       <div className="relative z-10 text-center px-6 w-full max-w-[1400px]">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -86,7 +88,7 @@ export function CinematicHero() {
           <motion.h1
             initial={{ opacity: 0 }}
             animate={{ opacity: isTextRevealed ? 1 : 0 }}
-            transition={{ duration: 1 }} // Fade in doux
+            transition={{ duration: 1 }}
             className="text-6xl md:text-8xl lg:text-9xl font-[family-name:var(--font-playfair)] font-bold tracking-tight relative z-10"
           >
             <span className="inline-block text-transparent bg-clip-text bg-gradient-to-br from-[#D96C06] via-[#8A2BE2] to-[#C84B31]">K</span>
