@@ -3,12 +3,10 @@ import { CinematicServices } from "@/components/home/CinematicServices";
 import { CinematicProjects } from "@/components/home/CinematicProjects";
 import { CinematicStudio } from "@/components/home/CinematicStudio";
 import { CinematicContact } from "@/components/home/CinematicContact";
-import { IntroOverlay } from "@/components/layout/IntroOverlay";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-background text-foreground">
-      <IntroOverlay /> {/* L'intro qui couvre tout */}
       <CinematicHero />
       <CinematicServices />
       <CinematicProjects />
