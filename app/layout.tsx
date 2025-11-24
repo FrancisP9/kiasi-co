@@ -4,6 +4,7 @@ import "./globals.css";
 import { FloatingNav } from "@/components/layout/FloatingNav";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { ThemeProvider } from "@/components/theme-provider";
+import React from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -43,7 +44,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <ThemeToggle />
-          {children}
+          <div className="relative flex flex-col w-full">
+            {children}
+          </div>
           <FloatingNav />
         </ThemeProvider>
       </body>

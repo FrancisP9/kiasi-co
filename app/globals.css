@@ -3,12 +3,15 @@
 @variant dark (&:where(.dark, .dark *));
 
 :root {
-  --background: #FDFBF7;
-  --foreground: #1A1A1A;
+  /* Mode Jour: Fond Sable Chaud (plus teinté que le précédent) */
+  --background: #F7F3EB; 
+  /* Texte: Marron très foncé (presque noir mais plus chaud) */
+  --foreground: #2A1F1D;
 }
 
 .dark {
-  --background: #0a0a0a;
+  /* Mode Nuit: Noir profond */
+  --background: #050505;
   --foreground: #ededed;
 }
 
